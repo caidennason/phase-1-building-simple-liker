@@ -4,6 +4,26 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+ // likes = document.getElementsByClassName('like-glyph')
+  //for (let like of likes){
+  //  like.addEventListener('click', function(){
+  //    mimicServerCall(){
+  //      like.innerHTML = FULL_HEART
+  //    like.addEventListener('click', function(){
+  //      like.innerHTML = EMPTY_HEART
+  //    })
+ //   }
+//}
+ // } 
+
+let likes = document.getElementsByClassName('like-glyph')
+for (let like of likes){
+  like.addEventListener('click', function(){
+    mimicServerCall()
+    .then(res => console.log(res))
+
+  })
+}
 
 
 
